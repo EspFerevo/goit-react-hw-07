@@ -1,0 +1,70 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn {
+  margin: 10px auto 0;
+  padding: 10px;
+  width: 150px;
+  border: none;
+  border-radius: 8px;
+  background-color: #555;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.input {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  height: 40px;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #374fe4;
+  box-shadow: 0 0 8px rgba(55, 79, 228, 0.2);
+}
+
+.error {
+  font-size: 0.9rem;
+  color: #ff1744;
+  margin-top: -5px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.error:before {
+  content: "⚠ ";
+  display: inline-block;
+  margin-right: 5px;
+}

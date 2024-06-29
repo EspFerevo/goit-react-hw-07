@@ -1,0 +1,93 @@
+.listCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 50px auto;
+  list-style: none;
+  animation: fadeIn 1s ease-in-out;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  height: 30px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contactItem:hover {
+  color: #374fe4;
+  transform: scale(1.05);
+}
+
+.iconPerson {
+  font-size: 1.5em;
+  color: #666;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.iconPerson:hover {
+  color: #374fe4;
+  transform: rotate(10deg) scale(1.2);
+}
+
+.btn {
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 8px;
+  background-color: #555;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+.contactContainer {
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.contactContainer:hover {
+  background: #f0f0f0;
+}
